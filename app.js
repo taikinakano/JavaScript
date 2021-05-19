@@ -1,5 +1,17 @@
-var hello = 'Hello World'
-alert(hello);
+var alertString;
+alertString = addString("WebCanp");
+
+alert(alertString);
+
+function addString(strA){
+    var addStr = "Hello" + strA;
+    return addStr;
+}
+
+
+
+////var hello = 'Hello World'
+/*alert(hello);
 var int1 = 1;
 var int2 = -10;
 var float1 = 3.14;
@@ -11,6 +23,14 @@ var apple = 120;
 var max = 100;
 var num = 1;
 var count = 0;
+var i;
+var num = 0;
+
+for(i = 1;i<11;i++){
+ num = num + i;
+}
+
+alert("1から10まで足し算した結果は" + num + "です")；
 alert(int2);
 alert(str1 + str2);
 alert('Hello'+'World');
@@ -28,4 +48,4 @@ while(num < max){
   count = count + 1;
 }
 
-alert('２をかけ続けて' + max + 'を超えるのに必要だった回数は' + count + '回です');
+alert('２をかけ続けて' + max + 'を超えるのに必要だった回数は' + count + '回です');*/
