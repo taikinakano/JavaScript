@@ -1,13 +1,19 @@
-$(".theTarget").skippr({
-    transition : 'fade',
-    speed : 1000,
-    easing : 'easeOutQuart',
-    navType : 'block',
-    childrenElementType : 'div',
-    arrows : true,
-    autoPlay : true,
-    autoPlayDuration : 5000,
-    keyboardOnAlways : true,
-    hidePrevious : false 
+$('#tab-contents .tab[id != "tab1"]').hide();
+
+$('#tab-menu a').on('click', function(event) {
+    $("#tab-contents .tab").hide();
+    $("#tab-menu .active").removeClass("active");
+    $(this).addClass("active");
+    $($(this).attr("href")).show();
+    event.preventDefault();
 });
 
+/*$('#tab-contents .tab[id != "tab1"]').hide();
+
+$('#tab-menu a').on('click', function(event) {
+  $("#tab-contents .tab").hide();
+  $("#tab-menu .active").removeClass("active");
+  $(this).addClass("active");
+  $($(this).attr("href")).show();
+  event.preventDefault();
+});*/
